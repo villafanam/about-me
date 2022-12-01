@@ -137,26 +137,38 @@ function question_06(){
   alert('The is answer is...88!');
 }
 
-let arrPrimes = [89, 79, 7, 11, 23, 13];
-let gameOver = false;
-for(let i = 0; i < 6; i++)
-{
-  userInput = prompt('What prime number between 1 to 100 do I like?');
-  for(let j = 0; j < arrPrimes.length; j++)
+function question_07(){
+  let userInput;
+  let arrPrimes = [89, 79, 7, 11, 23, 13];
+  let gameOver = false;
+  for(let i = 0; i < 6; i++)
   {
-    if(parseInt(userInput, 10) === arrPrimes[j])
+    userInput = prompt('What prime number between 1 to 100 do I like?');
+    for(let j = 0; j < arrPrimes.length; j++)
     {
-      alert(`${arrPrimes[j]}...is CORRECT!`);
-      score++;
-      gameOver = true;
-      break;
+      if(parseInt(userInput, 10) === arrPrimes[j])
+      {
+        alert(`${arrPrimes[j]}...is CORRECT!`);
+        score++;
+        gameOver = true;
+        break;
+      }
     }
+    if(gameOver){break;}
   }
-  if(gameOver){break;}
-}
-alert('GAME OVER...A8ll possible anwers: 89, 79, 7, 11, 23, 13');
+  alert('GAME OVER...A8ll possible anwers: 89, 79, 7, 11, 23, 13');
 
-alert(`Total score: ${score} out 7`);
+  alert(`Total score: ${score} out 7`);
+}
+
+//function calls
+question_01();
+question_02();
+question_03();
+question_04();
+question_05();
+question_06();
+question_07();
 
 // TODO:  GIVE a personalized message at the end
 alert(`Thanks for visiting my site ${userName}! Hope you had have fun!`);
