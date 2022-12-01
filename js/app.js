@@ -156,7 +156,7 @@ function question_07(){
     }
     if(gameOver){break;}
   }
-  alert('GAME OVER...A8ll possible anwers: 89, 79, 7, 11, 23, 13');
+  alert('GAME OVER...All possible anwers: 89, 79, 7, 11, 23, 13');
 
   alert(`Total score: ${score} out 7`);
 }
