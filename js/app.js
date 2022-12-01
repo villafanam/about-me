@@ -1,7 +1,7 @@
 'use strict';
 
-console.log('Hello World');
-
+//console.log('Hello World');
+let score = 0;
 // TODO:  GET USERS NAME - promt - alert a greeting back to the user
 
 let userName = prompt('What is your name?');
@@ -14,6 +14,7 @@ if(userInput === 'yes' || userInput === 'y')
 {
   //console.log(`${userName} you are CORRECT!`);
   alert(`${userName} you are CORRECT!`);
+  score++;
 }
 else if(userInput === 'no' || userInput === 'n')
 {
@@ -31,6 +32,7 @@ if(userInput === 'yes' || userInput === 'y')
 {
   //console.log(`${userName} you are CORRECT!`);
   alert(`${userName} you are CORRECT!`);
+  score++;
 }
 else if(userInput === 'no' || userInput === 'n')
 {
@@ -53,6 +55,7 @@ else if(userInput === 'no' || userInput === 'n')
 {
   //console.log(`${userName} you are CORRECT!`);
   alert(`${userName} you are CORRECT!`);
+  score++;
 }
 else
 {
@@ -65,6 +68,7 @@ if(userInput === 'yes' || userInput === 'y')
 {
   //console.log(`${userName} you are CORRECT!`);
   alert(`${userName} you are CORRECT!`);
+  score++;
 }
 else if(userInput === 'no' || userInput === 'n')
 {
@@ -87,12 +91,58 @@ else if(userInput === 'no' || userInput === 'n')
 {
   //console.log(`${userName} you are CORRECT!`);
   alert(`${userName} you are CORRECT!`);
+  score++;
 }
 else
 {
   alert('ERROR...Invaild Input!!!');
 }
 
+//Lab 03
+let chances = 4;
+for(let i = 0; i < 4; i++)
+{
+  //console.log('i= ' + i + "...chances= " + chances);
+  userInput = prompt(`Guess whats my favorite number is! You have ${chances} chances.`);
+  chances--;
+
+  if(userInput == 88)
+  {
+    alert('Your answer is CORRECT...');
+    score++;
+    break;
+  }
+  else if(userInput < 88)
+  {
+    alert('Too low!');
+  }
+  else if(userInput > 88)
+  {
+    alert('Too high!');
+  }
+}
+alert('The is answer is...88!');
+
+let arrPrimes = [89, 79, 7, 11, 23, 13];
+let gameOver = false;
+for(let i = 0; i < 6; i++)
+{
+  userInput = prompt('What prime number between 1 to 100 do I like?');
+  for(let j = 0; j < arrPrimes.length; j++)
+  {
+    if(userInput == arrPrimes[j])
+    {
+      alert(`${arrPrimes[j]}...is CORRECT!`);
+      score++;
+      gameOver = true;
+      break;
+    }
+  }
+  if(gameOver){break;}
+}
+alert('GAME OVER...A8ll possible anwers: 89, 79, 7, 11, 23, 13');
+
+alert(`Total score: ${score} out 7`);
 
 // TODO:  GIVE a personalized message at the end
-alert(`Thanks for visiting my site ${userName}! Hope you have fun!`);
+alert(`Thanks for visiting my site ${userName}! Hope you had have fun!`);
