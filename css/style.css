@@ -1,14 +1,25 @@
 body
 {
-  background-color: rgb(148, 169, 148);
+  background-color: #aaa0cb;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1em;
 }
 
 h1
 {
-  background-color: maroon;
-  color: lightgreen;
-  font-size: 4vw;
+  background-color: rgb(94, 14, 169);
+  color: #fbf169;
+  font-size: 3em;
   text-align: center;
+}
+
+h2
+{
+  background-color: rgb(94, 14, 169);
+  color: #fbf169;
+  font-size: 1.5em;
+  text-align: center;
+  width:auto;
 }
 
 .bio
@@ -29,16 +40,68 @@ h1
 
 .bio p
 {
-  background-color: lightgreen; 
-  color: maroon; 
-  width: 70%; 
-  border: 3px solid; 
+  background-color: 	#fbf169; 
+  color: black; 
+  width: 90%; 
+  border: 3px solid rgb(94, 14, 169); 
   border-radius: 10px; 
   padding: 3px 6px; 
   margin: auto; 
-  /* margin-top: 30px;  */
-  font-size: 25px; 
   text-align: left;
+}
+
+#lgList
+{
+  background-color: #fbf169; 
+  width: 90%;
+  color: black; 
+  border: 3px solid rgb(94, 14, 169); 
+  border-radius: 10px; 
+  padding: 3px 6px;
+  margin: auto;
+}
+
+#lgList ul
+{
+  list-style-type: disc;
+  /* max-width: 90%; */
+  margin: auto;
+  padding: 10px;
+}
+
+.smlist 
+{
+  flex-direction: row;
+  display: flex;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
   
 }
+.smlist div
+{
+  width: 50%;
+  /* padding: 1%; */
+  background-color: #fbf169; 
+  color: black; 
+  border: 3px solid rgb(94, 14, 169); 
+  border-radius: 10px; 
+  padding: 3px 6px;
+  margin-left: 1%; 
+  /* margin: auto; */
+} 
+
+.smlist ol
+{
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+.smlist ul
+{
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
 
