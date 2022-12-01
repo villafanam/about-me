@@ -110,29 +110,32 @@ function question_05(){
 }
 
 //Lab 03
-let chances = 4;
-for(let i = 0; i < 4; i++)
-{
-  //console.log('i= ' + i + "...chances= " + chances);
-  userInput = prompt(`Guess whats my favorite number is! You have ${chances} chances.`);
-  chances--;
+function question_06(){
+  let userInput;
+  let chances = 4;
+  for(let i = 0; i < 4; i++)
+  {
+    //console.log('i= ' + i + "...chances= " + chances);
+    userInput = prompt(`Guess whats my favorite number is! You have ${chances} chances.`);
+    chances--;
 
-  if(Number(userInput) === 88)
-  {
-    alert('Your answer is CORRECT...');
-    score++;
-    break;
+    if(Number(userInput) === 88)
+    {
+      alert('Your answer is CORRECT...');
+      score++;
+      break;
+    }
+    else if(userInput < 88)
+    {
+      alert('Too low!');
+    }
+    else if(userInput > 88)
+    {
+      alert('Too high!');
+    }
   }
-  else if(userInput < 88)
-  {
-    alert('Too low!');
-  }
-  else if(userInput > 88)
-  {
-    alert('Too high!');
-  }
+  alert('The is answer is...88!');
 }
-alert('The is answer is...88!');
 
 let arrPrimes = [89, 79, 7, 11, 23, 13];
 let gameOver = false;
