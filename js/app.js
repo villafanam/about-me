@@ -10,7 +10,7 @@ alert(`Welcome to my site ${userName}! Please answer the following questions wit
 
 // TODO: prompt them 5 yer or no (y/n) qestion, alert if they got the answer right or wrong
 // answer: yes
-function question_01() {
+function question_01(){
   let userInput = prompt('Do I live in Washington state? (yes/y or no/n)').toLowerCase();
   if(userInput === 'yes' || userInput === 'y')
   {
@@ -30,7 +30,7 @@ function question_01() {
 }
 
 //answer: yes
-function question_02() {
+function question_02(){
   let userInput = prompt('Did I do desktop and network support in the Army?(yes/y or no/n)').toLowerCase();
   if(userInput === 'yes' || userInput === 'y')
   {
@@ -50,7 +50,7 @@ function question_02() {
 }
 
 //answer: no
-function question_03() {
+function question_03(){
   let userInput = prompt('Was I in the Navy? (yes/y or no/n)').toLowerCase();
   if(userInput === 'yes' || userInput === 'y')
   {
@@ -70,7 +70,7 @@ function question_03() {
 }
 
 //answer: yes
-function question_04 () {
+function question_04(){
   let userInput = prompt('Do I have a Degree? (yes/y or no/n)').toLowerCase();
   if(userInput === 'yes' || userInput === 'y')
   {
@@ -90,21 +90,23 @@ function question_04 () {
 }
 
 //answer: no
-userInput = prompt('Do I specialize in web design? (yes/y or no/n)').toLowerCase();
-if(userInput === 'yes' || userInput === 'y')
-{
-  //console.log(`${userName} you are INCORRECT!`);
-  alert(`${userName} you are INCORRECT!`);
-}
-else if(userInput === 'no' || userInput === 'n')
-{
-  //console.log(`${userName} you are CORRECT!`);
-  alert(`${userName} you are CORRECT!`);
-  score++;
-}
-else
-{
-  alert('ERROR...Invaild Input!!!');
+function question_05(){
+  let userInput = prompt('Do I specialize in web design? (yes/y or no/n)').toLowerCase();
+  if(userInput === 'yes' || userInput === 'y')
+  {
+    //console.log(`${userName} you are INCORRECT!`);
+    alert(`${userName} you are INCORRECT!`);
+  }
+  else if(userInput === 'no' || userInput === 'n')
+  {
+    //console.log(`${userName} you are CORRECT!`);
+    alert(`${userName} you are CORRECT!`);
+    score++;
+  }
+  else
+  {
+    alert('ERROR...Invaild Input!!!');
+  }
 }
 
 //Lab 03
