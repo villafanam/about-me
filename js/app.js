@@ -30,21 +30,23 @@ function question_01() {
 }
 
 //answer: yes
-userInput = prompt('Did I do desktop and network support in the Army?(yes/y or no/n)').toLowerCase();
-if(userInput === 'yes' || userInput === 'y')
-{
-  //console.log(`${userName} you are CORRECT!`);
-  alert(`${userName} you are CORRECT!`);
-  score++;
-}
-else if(userInput === 'no' || userInput === 'n')
-{
-  //console.log(`${userName} you are INCORRECT!`);
-  alert(`${userName} you are INCORRECT!`);
-}
-else
-{
-  alert('ERROR...Invaild Input!!!');
+function question_02() {
+  let userInput = prompt('Did I do desktop and network support in the Army?(yes/y or no/n)').toLowerCase();
+  if(userInput === 'yes' || userInput === 'y')
+  {
+    //console.log(`${userName} you are CORRECT!`);
+    alert(`${userName} you are CORRECT!`);
+    score++;
+  }
+  else if(userInput === 'no' || userInput === 'n')
+  {
+    //console.log(`${userName} you are INCORRECT!`);
+    alert(`${userName} you are INCORRECT!`);
+  }
+  else
+  {
+    alert('ERROR...Invaild Input!!!');
+  }
 }
 
 //answer: no
