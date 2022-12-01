@@ -70,21 +70,23 @@ function question_03() {
 }
 
 //answer: yes
-userInput = prompt('Do I have a Degree? (yes/y or no/n)').toLowerCase();
-if(userInput === 'yes' || userInput === 'y')
-{
-  //console.log(`${userName} you are CORRECT!`);
-  alert(`${userName} you are CORRECT!`);
-  score++;
-}
-else if(userInput === 'no' || userInput === 'n')
-{
-  //console.log(`${userName} you are INCORRECT!`);
-  alert(`${userName} you are INCORRECT!`);
-}
-else
-{
-  alert('ERROR...Invaild Input!!!');
+function question_04 () {
+  let userInput = prompt('Do I have a Degree? (yes/y or no/n)').toLowerCase();
+  if(userInput === 'yes' || userInput === 'y')
+  {
+    //console.log(`${userName} you are CORRECT!`);
+    alert(`${userName} you are CORRECT!`);
+    score++;
+  }
+  else if(userInput === 'no' || userInput === 'n')
+  {
+    //console.log(`${userName} you are INCORRECT!`);
+    alert(`${userName} you are INCORRECT!`);
+  }
+  else
+  {
+    alert('ERROR...Invaild Input!!!');
+  }
 }
 
 //answer: no
