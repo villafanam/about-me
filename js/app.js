@@ -140,7 +140,7 @@ function question_06(){
 function question_07(){
   let userInput;
   let arrPrimes = [89, 79, 7, 11, 23, 13];
-  let gameOver = false;
+  //let gameOver = false;
   for(let i = 0; i < 6; i++)
   {
     userInput = prompt('What prime number between 1 to 100 do I like?');
@@ -150,13 +150,14 @@ function question_07(){
       {
         alert(`${arrPrimes[j]}...is CORRECT!`);
         score++;
-        gameOver = true;
+        i = 6;
+        //gameOver = true;
         break;
       }
     }
-    if(gameOver){break;}
+    //if(gameOver){break;}
   }
-  alert('GAME OVER...All possible anwers: 89, 79, 7, 11, 23, 13');
+  alert(`GAME OVER...All possible anwers: ${arrPrimes}`);
 
   alert(`Total score: ${score} out 7`);
 }
