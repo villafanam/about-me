@@ -163,13 +163,13 @@ function question_07(){
 }
 
 //function calls
-question_01();
-question_02();
-question_03();
-question_04();
-question_05();
-question_06();
-question_07();
+// question_01();
+// question_02();
+// question_03();
+// question_04();
+// question_05();
+// question_06();
+// question_07();
 
 // TODO:  GIVE a personalized message at the end
 alert(`Thanks for visiting my site ${userName}! Hope you had have fun!`);
